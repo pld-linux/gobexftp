@@ -17,6 +17,8 @@ This package contains a GTK client for ObexFTP.
 
 %prep
 %setup
+cd src
+%patch0 -p1
 
 %build
 %configure 
