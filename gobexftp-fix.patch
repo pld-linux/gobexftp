@@ -1,0 +1,19 @@
+--- ./gobexftp.c.org	2002-11-26 15:12:53.000000000 +0100
++++ ./gobexftp.c	2005-09-23 22:14:46.770327632 +0200
+@@ -337,14 +337,14 @@
+ 	else
+ 		ctrans = NULL;
+ 
+-	cli = obexftp_cli_open(info_cb, ctrans, NULL);
++	cli = obexftp_cli_open(info_cb, ctrans, NULL, NULL);
+ 	if(cli == NULL) {
+ 		g_print("Error opening obexftp-client\n");
+ 		return -1;
+ 	}
+ 
+ 	/* Connect */
+-	if(obexftp_cli_connect(cli) < 0) {
++	if(obexftp_cli_connect(cli, dev, NULL) < 0) {
+ 		obexftp_cli_close(cli);
+ 		cli = NULL;
+ 		gtk_statusbar_pop (GTK_STATUSBAR (statusbar), context_id);
