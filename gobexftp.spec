@@ -1,4 +1,5 @@
-Summary:	Access devices via ObexFTP e.g. Siemens Moblile Equipment
+Summary:	Access devices via ObexFTP e.g. Siemens Mobile Equipment
+Summary(pl):	Dostêp poprzez ObexFTP do urz±dzeñ, np. do Siemens Mobile Equipment
 Name:		gobexftp
 Version:	0.2
 Release:	0.1
@@ -13,10 +14,13 @@ BuildRequires:	obexftp-devel > 0.10.7-1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package contains a GTK client for ObexFTP.
+This package contains a GTK+ client for ObexFTP.
+
+%description -l pl
+Ten pakiet zawiera klienta GTK+ dla ObexFTP.
 
 %prep
-%setup
+%setup -q
 cd src
 %patch0 -p1
 
@@ -34,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root)
+%defattr(644,root,root,755)
 #%doc AUTHORS COPYING ChangeLog NEWS README
 #%{_bindir}/*
 #%{_datadir}/gobexftp/pixmaps/*
