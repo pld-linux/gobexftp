@@ -1,5 +1,5 @@
 Summary:	Access devices via ObexFTP e.g. Siemens Mobile Equipment
-Summary(pl):	Dostêp poprzez ObexFTP do urz±dzeñ, np. do Siemens Mobile Equipment
+Summary(pl.UTF-8):   DostÄ™p poprzez ObexFTP do urzÄ…dzeÅ„, np. do Siemens Mobile Equipment
 Name:		gobexftp
 Version:	0.2
 Release:	0.1
@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains a GTK+ client for ObexFTP.
 
-%description -l pl
+%description -l pl.UTF-8
 Ten pakiet zawiera klienta GTK+ dla ObexFTP.
 
 %prep
