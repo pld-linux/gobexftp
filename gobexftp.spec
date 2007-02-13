@@ -1,5 +1,5 @@
 Summary:	Access devices via ObexFTP e.g. Siemens Mobile Equipment
-Summary(pl.UTF-8):   Dostęp poprzez ObexFTP do urządzeń, np. do Siemens Mobile Equipment
+Summary(pl.UTF-8):	Dostęp poprzez ObexFTP do urządzeń, np. do Siemens Mobile Equipment
 Name:		gobexftp
 Version:	0.2
 Release:	0.1
